@@ -26,7 +26,7 @@
           </span>
         </template>
 
-        <v-list three-line width="250">
+        <v-list three-line height="400" width="300">
           <template v-for="(item, index) in items">
             <v-subheader 
               v-if="item.header" 
@@ -119,6 +119,24 @@ export default {
         ],
         items: [
           {header: 'Today'},
+          {
+            avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
+            title: 'Brunch this weekend',
+            subtitle: `<span class="text--primary">Ali Connors</span> &mdash; I'll be in your neighborhood doing errands this weekend.`
+          },
+          { divider: true, inset: true},
+          {
+            avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
+            title: 'Summer BBQ <span class="grey--text text--lighten">4</span>',
+            subtitle: `<span class="text--primary">to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend.`
+          },
+          { divider: true, inset: true},
+          {
+            avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
+            title: 'Summer BBQ <span class="grey--text text--lighten">4</span>',
+            subtitle: `<span class="text--primary">to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend.`
+          },
+          {header: 'Yesterday'},
           {
             avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
             title: 'Brunch this weekend',
